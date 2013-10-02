@@ -1,0 +1,4 @@
+libreadosm.so.1 libreadosm1 #MINVER#
+ readosm_close@Base 1.0.0a
+ readosm_open@Base 1.0.0a
+ readosm_parse@Base 1.0.0a

@@ -1,0 +1,101 @@
+Source: readosm
+Maintainer: Debian GIS Project <pkg-grass-devel@lists.alioth.debian.org>
+Uploaders: Debian OpenStreetMap Team <pkg-osm-maint@lists.alioth.debian.org>,
+           David Paleino <dapal@debian.org>,
+           Bas Couwenberg <sebastic@xs4all.nl>
+Section: libs
+Priority: optional
+Build-Depends: debhelper (>= 9),
+               autotools-dev,
+               dh-autoreconf,
+               libexpat1-dev,
+               zlib1g-dev,
+               doxygen,
+               graphviz
+Standards-Version: 3.9.4
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-grass/readosm.git
+Vcs-Git: git://anonscm.debian.org/pkg-grass/readosm.git
+Homepage: https://www.gaia-gis.it/fossil/readosm/index
+
+Package: libreadosm-dev
+Architecture: any
+Multi-Arch: same
+Section: libdevel
+Depends: ${misc:Depends},
+         libexpat1-dev,
+         zlib1g-dev,
+         libreadosm1 (= ${binary:Version})
+Description: simple library to parse OpenStreetMap files - headers
+ ReadOSM is an open source library to extract valid data from within an
+ OpenStreetMap input file. Such OSM files come in two different
+ formats, .osm (XML) and .pbf.
+ .
+ Some of the design goals of ReadOSM are:
+  - to be simple and lightweight
+  - to be stable, robust and efficient
+  - to be easily and universally portable
+  - making the whole parsing process of both .osm or .osm.pbf files
+    completely transparent from the application own perspective.
+ .
+ This package contains files needed for development.
+
+Package: libreadosm1
+Architecture: any
+Multi-Arch: same
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Description: simple library to parse OpenStreetMap files
+ ReadOSM is an open source library to extract valid data from within an
+ OpenStreetMap input file. Such OSM files come in two different
+ formats, .osm (XML) and .pbf.
+ .
+ Some of the design goals of ReadOSM are:
+  - to be simple and lightweight
+  - to be stable, robust and efficient
+  - to be easily and universally portable
+  - making the whole parsing process of both .osm or .osm.pbf files
+    completely transparent from the application own perspective.
+
+Package: libreadosm1-dbg
+Architecture: any
+Multi-Arch: same
+Section: debug
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         libreadosm1 (= ${binary:Version})
+Description: simple library to parse OpenStreetMap files - debug symbols
+ ReadOSM is an open source library to extract valid data from within an
+ OpenStreetMap input file. Such OSM files come in two different
+ formats, .osm (XML) and .pbf.
+ .
+ Some of the design goals of ReadOSM are:
+  - to be simple and lightweight
+  - to be stable, robust and efficient
+  - to be easily and universally portable
+  - making the whole parsing process of both .osm or .osm.pbf files
+    completely transparent from the application own perspective.
+ .
+ This package contains detached symbols useful for debugging.
+
+Package: libreadosm-doc
+Architecture: all
+Multi-Arch: foreign
+Section: doc
+Depends: libjs-jquery,
+         ${misc:Depends}
+Description: simple library to parse OpenStreetMap files - documentation
+ ReadOSM is an open source library to extract valid data from within an
+ OpenStreetMap input file. Such OSM files come in two different
+ formats, .osm (XML) and .pbf.
+ .
+ Some of the design goals of ReadOSM are:
+  - to be simple and lightweight
+  - to be stable, robust and efficient
+  - to be easily and universally portable
+  - making the whole parsing process of both .osm or .osm.pbf files
+    completely transparent from the application own perspective.
+ .
+ This package contains the library documentation..
+

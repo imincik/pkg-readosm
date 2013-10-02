@@ -1,0 +1,27 @@
+readosm (1.0.0b+dfsg1-2) unstable; urgency=low
+
+  * Add myself to Uploaders.
+  * Use canonical URLs for Vcs-* fields.
+  * Update copyright file.
+  * Add dependency on libjs-query for doc package.
+  * Use dh-autoreconf for retooling.
+  * Update watch file, handle common mistakes.
+  * Add Multi-Arch control fields.
+  * Add lintian overrides for no upstream changelog, link to upstream timeline.
+  * Add build dependency on graphiz, dot is used to generate documentation.
+  * Move package maintenance from pkg-osm to pkg-grass.
+
+ -- Bas Couwenberg <sebastic@xs4all.nl>  Wed, 02 Oct 2013 19:43:27 +0200
+
+readosm (1.0.0b+dfsg1-1) unstable; urgency=low
+
+  * New upstream version.
+  * Move package from pkg-grass to pkg-osm
+
+ -- David Paleino <dapal@debian.org>  Wed, 14 Nov 2012 17:00:32 +0100
+
+readosm (1.0.0a+dfsg1-1) unstable; urgency=low
+
+  * Initial release (Closes: #671678)
+
+ -- David Paleino <dapal@debian.org>  Sun, 07 Oct 2012 17:24:29 +0200

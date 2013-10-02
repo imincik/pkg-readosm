@@ -1,0 +1,62 @@
+From: David Paleino <dapal@debian.org>
+Subject: disable buildtime tests
+Origin: vendor
+Forwarded: no
+
+---
+ Makefile.am  |    2 +-
+ Makefile.in  |    2 +-
+ configure    |    3 +--
+ configure.ac |    1 -
+ 4 files changed, 3 insertions(+), 5 deletions(-)
+
+--- readosm.orig/Makefile.am
++++ readosm/Makefile.am
+@@ -1,6 +1,6 @@
+ ACLOCAL_AMFLAGS = -I m4
+ 
+-SUBDIRS = headers src tests examples
++SUBDIRS = headers src examples
+ 
+ EXTRA_DIST = makefile.vc nmake.opt mainpage.doxy
+ 
+--- readosm.orig/Makefile.in
++++ readosm/Makefile.in
+@@ -250,7 +250,7 @@ top_build_prefix = @top_build_prefix@
+ top_builddir = @top_builddir@
+ top_srcdir = @top_srcdir@
+ ACLOCAL_AMFLAGS = -I m4
+-SUBDIRS = headers src tests examples
++SUBDIRS = headers src examples
+ EXTRA_DIST = makefile.vc nmake.opt mainpage.doxy
+ AUTOMAKE_OPTIONS = dist-zip
+ pkgconfigdir = $(libdir)/pkgconfig
+--- readosm.orig/configure
++++ readosm/configure
+@@ -16757,7 +16757,7 @@ if test "x$enable_gcov" = "xyes"; then
+     GCOV_FLAGS="-lgcov"
+ fi
+ 
+-ac_config_files="$ac_config_files Makefile headers/Makefile src/Makefile tests/Makefile examples/Makefile Doxyfile readosm.pc"
++ac_config_files="$ac_config_files Makefile headers/Makefile src/Makefile examples/Makefile Doxyfile readosm.pc"
+ 
+ 
+ 
+@@ -18010,7 +18010,6 @@ do
+     "Makefile") CONFIG_FILES="$CONFIG_FILES Makefile" ;;
+     "headers/Makefile") CONFIG_FILES="$CONFIG_FILES headers/Makefile" ;;
+     "src/Makefile") CONFIG_FILES="$CONFIG_FILES src/Makefile" ;;
+-    "tests/Makefile") CONFIG_FILES="$CONFIG_FILES tests/Makefile" ;;
+     "examples/Makefile") CONFIG_FILES="$CONFIG_FILES examples/Makefile" ;;
+     "Doxyfile") CONFIG_FILES="$CONFIG_FILES Doxyfile" ;;
+     "readosm.pc") CONFIG_FILES="$CONFIG_FILES readosm.pc" ;;
+--- readosm.orig/configure.ac
++++ readosm/configure.ac
+@@ -55,7 +55,6 @@ fi
+ AC_CONFIG_FILES([Makefile \
+ 		headers/Makefile \
+ 		src/Makefile \
+-		tests/Makefile \
+ 		examples/Makefile \
+ 		Doxyfile \
+ 		readosm.pc])

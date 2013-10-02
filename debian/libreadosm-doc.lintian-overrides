@@ -1,0 +1,18 @@
+# Changes available only in the upstream VCS:
+# https://www.gaia-gis.it/fossil/readosm/timeline
+libreadosm-doc: no-upstream-changelog
+
+libreadosm-doc: duplicate-files usr/share/doc/libreadosm-doc/html/ftv2blank.png usr/share/doc/libreadosm-doc/html/ftv2lastnode.png usr/share/doc/libreadosm-doc/html/ftv2node.png usr/share/doc/libreadosm-doc/html/ftv2vertline.png
+libreadosm-doc: duplicate-files usr/share/doc/libreadosm-doc/html/search/all_76.js usr/share/doc/libreadosm-doc/html/search/variables_76.js
+libreadosm-doc: duplicate-files usr/share/doc/libreadosm-doc/html/ftv2doc.png usr/share/doc/libreadosm-doc/html/ftv2link.png
+libreadosm-doc: duplicate-files usr/share/doc/libreadosm-doc/html/search/all_6c.js usr/share/doc/libreadosm-doc/html/search/variables_6c.js
+libreadosm-doc: duplicate-files usr/share/doc/libreadosm-doc/html/search/all_69.js usr/share/doc/libreadosm-doc/html/search/variables_69.js
+libreadosm-doc: duplicate-files usr/share/doc/libreadosm-doc/html/ftv2plastnode.png usr/share/doc/libreadosm-doc/html/ftv2pnode.png
+libreadosm-doc: duplicate-files usr/share/doc/libreadosm-doc/html/search/all_61.js usr/share/doc/libreadosm-doc/html/search/pages_61.js
+libreadosm-doc: duplicate-files usr/share/doc/libreadosm-doc/html/search/all_6b.js usr/share/doc/libreadosm-doc/html/search/variables_6b.js
+libreadosm-doc: duplicate-files usr/share/doc/libreadosm-doc/html/search/all_6d.js usr/share/doc/libreadosm-doc/html/search/variables_6d.js
+libreadosm-doc: duplicate-files usr/share/doc/libreadosm-doc/html/search/all_74.js usr/share/doc/libreadosm-doc/html/search/variables_74.js
+libreadosm-doc: duplicate-files usr/share/doc/libreadosm-doc/html/ftv2mlastnode.png usr/share/doc/libreadosm-doc/html/ftv2mnode.png
+libreadosm-doc: duplicate-files usr/share/doc/libreadosm-doc/html/search/all_6f.js usr/share/doc/libreadosm-doc/html/search/pages_6f.js
+libreadosm-doc: duplicate-files usr/share/doc/libreadosm-doc/html/search/all_63.js usr/share/doc/libreadosm-doc/html/search/variables_63.js
+libreadosm-doc: duplicate-files usr/share/doc/libreadosm-doc/html/search/all_75.js usr/share/doc/libreadosm-doc/html/search/variables_75.js

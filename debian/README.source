@@ -1,0 +1,10 @@
+readosm for Debian
+------------------
+
+The original tarball has been repacked because it contained OSM data to run
+buildtime tests, which were licensed under the Creative Commons Attribution
+Share-Alike license 2.0, which isn't considered suitable for Debian main.
+
+Therefore these data have been removed from the tarball.
+
+ -- David Paleino <dapal@debian.org>  Sun, 07 Oct 2012 17:24:17 +0200
