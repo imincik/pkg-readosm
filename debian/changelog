@@ -1,3 +1,9 @@
+readosm (1.0.0b+dfsg1-2~precise1) precise; urgency=low
+
+  * Rebuild on Precise.
+
+ -- Ivan Mincik <ivan.mincik@gmail.com>  Thu, 27 Mar 2014 11:54:04 +0100
+
 readosm (1.0.0b+dfsg1-2) unstable; urgency=low
 
   * Add myself to Uploaders.
